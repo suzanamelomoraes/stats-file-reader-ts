@@ -1,6 +1,8 @@
 # Stats
 
-An application built with Typescript to practice and improve knowledge on:
+A reusable application built with Typescript to read files.
+
+This application is part of the "Typescript: The Complete Developer's Guide" course to learn and practice:
 
 - Interfaces
 - Enums

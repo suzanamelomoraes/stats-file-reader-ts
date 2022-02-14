@@ -34,3 +34,18 @@ manUnitedWins++;
 
 \*\*\* Report
 console.log(`Man United won ${manUnitedWins} games`);
+
+\*\*\* Issues to fix in this task
+
+- String comparisons (draw is not included but it exist)
+- Source data is hardcoded
+- Data array is all strings
+- Variable name after a specific team
+- Analysis type is fixed
+- No ability to output the report in different formats
+
+\*\*\* Tuples
+Tuple - very useful to describe fixed nd permanent structure like this data array
+
+1. Define the tuple as a new type
+2. Convert the row o strings into the appropriate types
