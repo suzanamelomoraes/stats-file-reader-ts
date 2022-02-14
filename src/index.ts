@@ -1,10 +1,10 @@
-import { CsvFileReader } from './CsvFileReader';
+import { MatchReader } from './MatchReader';
 import { MatchResult } from './MatchResult';
 
-// fs = module from node to read the file
-const reader = new CsvFileReader('football.csv');
+const reader = new MatchReader('football.csv');
 reader.read();
 
+// Logic to show how many games Manchester United won
 let manUnitedWins = 0;
 
 for (let match of reader.data) {
