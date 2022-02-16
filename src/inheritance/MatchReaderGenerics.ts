@@ -2,6 +2,8 @@ import { CsvFileReader } from './CsvFileReaderGenerics';
 import { dateStringToDate } from '../utils';
 import { MatchResult } from '../MatchResult';
 
+// Approach using Inheritance
+
 // Tuple
 type MatchData = [Date, string, string, number, number, MatchResult, string];
 

@@ -1,5 +1,7 @@
 import fs from 'fs';
 
+// Approach using Inheritance
+
 // Abstract class that used generics to became reusable
 export abstract class CsvFileReader<T> {
   // update data: string[][] - note MatchData tuple is already an array, so no need two [][]
