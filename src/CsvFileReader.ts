@@ -1,5 +1,9 @@
 import fs from 'fs';
 
+// Approach using Composition
+// Characterized bu an 'has a' relationship between two classes
+// MatchReader has a reference to CsvFileReader
+
 export class CsvFileReader {
   data: string[][] = [];
 

@@ -1,6 +1,10 @@
 import { dateStringToDate } from './utils';
 import { MatchResult } from './MatchResult';
 
+// Approach using Composition
+// Characterized bu an 'has a' relationship between two classes
+// MatchReader has a reference to CsvFileReader
+
 // Tuple
 type MatchData = [Date, string, string, number, number, MatchResult, string];
 

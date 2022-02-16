@@ -3,6 +3,8 @@ import { dateStringToDate } from '../utils';
 import { MatchResult } from '../MatchResult';
 
 // Approach using Inheritance
+// Characterized bu an 'is a' relationship between two classes
+// MatchReader is a CsvFileReader - Inherits all the properties
 
 // Tuple
 type MatchData = [Date, string, string, number, number, MatchResult, string];

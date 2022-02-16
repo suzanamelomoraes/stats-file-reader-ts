@@ -1,6 +1,8 @@
 import fs from 'fs';
 
 // Approach using Inheritance
+// Characterized bu an 'is a' relationship between two classes
+// MatchReader is a CsvFileReader - Inherits all the properties
 
 // Abstract class that used generics to became reusable
 export abstract class CsvFileReader<T> {
@@ -9,7 +11,7 @@ export abstract class CsvFileReader<T> {
 
   constructor(public filename: string) {}
 
-  // isolated custom logic specific to football.csv file moved to MatchReader.ts
+  // isolated custom logic specific to football.csv file moved to MatchReader
   abstract mapRow(row: string[]): T;
 
   // fs = module from nodejs to read the file
