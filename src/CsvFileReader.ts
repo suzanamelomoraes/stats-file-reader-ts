@@ -1,13 +1,9 @@
 import fs from 'fs';
 
-export abstract class CsvFileReader<T> {
-  // update data: string[][] - note MatchData tuple is already an array, so no need two [][]
-  data: T[] = [];
+export class CsvFileReader<T> {
+  data: string[][] = [];
 
   constructor(public filename: string) {}
-
-  // isolated custom logic specific to football.csv file moved to MatchReader.ts
-  abstract mapRow(row: string[]): T;
 
   // fs = module from nodejs to read the file
   read(): void {
@@ -19,8 +15,7 @@ export abstract class CsvFileReader<T> {
       .split('\n')
       .map((row: string): string[] => {
         return row.split(',');
-      })
-      .map(this.mapRow);
+      });
   }
 }
 
