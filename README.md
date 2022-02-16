@@ -9,6 +9,8 @@ This application is part of the "Typescript: The Complete Developer's Guide" cou
 - Type assertions
 - Abstract classes
 - Generics
+- Inheritance
+- Composition
 
 Please, feel free to contribute with comments, pointing issues or pull requests.
 
