@@ -1,6 +1,6 @@
 # Stats
 
-A reusable application built with Typescript to read files.
+A reusable application built with Typescript to read files and print files.
 
 This application is part of the "Typescript: The Complete Developer's Guide" course to learn and practice:
 

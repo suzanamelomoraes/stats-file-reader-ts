@@ -1,12 +1,11 @@
 import { dateStringToDate } from './utils';
 import { MatchResult } from './MatchResult';
+import { MatchData } from './MatchData';
 
 // Approach using Composition
-// Characterized bu an 'has a' relationship between two classes
-// MatchReader has a reference to CsvFileReader
 
-// Tuple
-type MatchData = [Date, string, string, number, number, MatchResult, string];
+// Characterized by an 'has a' relationship between two classes
+// MatchReader has a reference to CsvFileReader
 
 interface DataReader {
   read(): void;
@@ -34,4 +33,4 @@ export class MatchReader {
 }
 
 // Update each item of each row - convert into the appropriate types
-// Tuple that match football.cvs data = [Date, string, string, number, number, MatchResult, string];
+// Tuple (MatchData) that match football.cvs data = [Date, string, string, number, number, MatchResult, string];
