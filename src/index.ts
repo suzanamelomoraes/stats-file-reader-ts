@@ -1,6 +1,8 @@
 import { MatchReader } from './MatchReader';
 import { CsvFileReader } from './CsvFileReader';
-import { MatchResult } from './MatchResult';
+import { Summary } from './Summary';
+import { WinsAnalysis } from './analyzers/WinsAnalysis';
+import { ConsoleReport } from './reportTargets/ConsoleReport';
 
 // Step 1 - while using the interface based's logic
 // Create an object that satisfies the ´DataReader'interface
@@ -12,14 +14,6 @@ const matchReader = new MatchReader(csvFileReader);
 // Call the load method to execute the transformation and feed matches property
 matchReader.load();
 
-// Logic to test classes that shows how many games Manchester United won
-let manUnitedWins = 0;
-
-for (let match of matchReader.matches) {
-  if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
-    manUnitedWins++;
-  } else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {
-    manUnitedWins++;
-  }
-}
-console.log(`Man United won ${manUnitedWins} games`);
+const summary = new Summary(new WinsAnalysis('Everton'), new ConsoleReport());
+console.log(matchReader.matches);
+summary.buildAndPrintReport(matchReader.matches);
