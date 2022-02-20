@@ -13,7 +13,7 @@ This application is part of the "Typescript: The Complete Developer's Guide" cou
 - Composition
 - Static methods
 
-Please, feel free to contribute with comments, pointing issues or pull requests.
+Please, feel free to contribute with comments or include pull requests.
 
 ### Technologies:
 
@@ -28,3 +28,7 @@ Please, feel free to contribute with comments, pointing issues or pull requests.
 #### Helpful documentation
 
 - https://nodejs.org/api/fs.html#fsreadfilesyncpath-options
+
+#### Udemy Course
+
+https://www.udemy.com/course/typescript-the-complete-developers-guide/
