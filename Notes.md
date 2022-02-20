@@ -41,11 +41,15 @@ console.log(`Man United won ${manUnitedWins} games`);
 - Source data is hardcoded
 - Data array is all strings
 - Variable name after a specific team
-- Analysis type is fixed
-- No ability to output the report in different formats
+- Analysis type is fixed (analyzers files)
+- No ability to output the report in different formats (reportTargets files)
 
 \*\*\* Tuples
 Tuple - very useful to describe fixed nd permanent structure like this data array
 
 1. Define the tuple as a new type
 2. Convert the row o strings into the appropriate types
+
+\*\*\* Shortcut to instantiate Summary, plus analyser and a report on index.ts
+Create a static method to do the job instead of:
+const summary = new Summary(new new Summary(new WinsAnalysis(teamName), new ConsoleReport())) on index.js

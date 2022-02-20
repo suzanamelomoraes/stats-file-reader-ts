@@ -1,19 +1,19 @@
 import { MatchReader } from './MatchReader';
-import { CsvFileReader } from './CsvFileReader';
 import { Summary } from './Summary';
-import { WinsAnalysis } from './analyzers/WinsAnalysis';
-import { ConsoleReport } from './reportTargets/ConsoleReport';
 
 // Step 1 - while using the interface based's logic
 // Create an object that satisfies the ´DataReader'interface
-const csvFileReader = new CsvFileReader('football.csv');
+// const csvFileReader = new CsvFileReader('football.csv'); -> replaced for the shortcut at line 12
 
 // Step 2
 // Create an instance of MatchReader and pass in something that satisfies DataReader interface
-const matchReader = new MatchReader(csvFileReader);
+// const matchReader = new MatchReader(csvFileReader); Adding the shortcut below:
+const matchReader = MatchReader.fromCsv('football.csv');
+
 // Call the load method to execute the transformation and feed matches property
 matchReader.load();
 
-const summary = new Summary(new WinsAnalysis('Everton'), new ConsoleReport());
-console.log(matchReader.matches);
+const summary = Summary.winsAnalysisConsole('Chelsea');
+const summaryHTML = Summary.winsAnalysisHtmlReport('Everton');
 summary.buildAndPrintReport(matchReader.matches);
+summaryHTML.buildAndPrintReport(matchReader.matches);
