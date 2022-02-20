@@ -11,6 +11,7 @@ This application is part of the "Typescript: The Complete Developer's Guide" cou
 - Generics
 - Inheritance
 - Composition
+- Static methods
 
 Please, feel free to contribute with comments, pointing issues or pull requests.
 
