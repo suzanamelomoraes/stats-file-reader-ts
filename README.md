@@ -19,7 +19,7 @@ Please, feel free to contribute with comments or include pull requests.
 
 - Typescript
 
-### Applications / Helpers
+### Applications / Helpers / Third libraries
 
 - Nodemon
 - Concurrent
@@ -28,6 +28,8 @@ Please, feel free to contribute with comments or include pull requests.
 #### Helpful documentation
 
 - https://nodejs.org/api/fs.html#fsreadfilesyncpath-options
+- https://www.npmjs.com/package/nodemon
+- https://www.npmjs.com/package/concurrently
 
 #### Udemy Course
 
